@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
   </head>
   <body>
-    <div>Descuentos 20%</div>
+    <div id="desc">Descuentos 20%</div>
     <header>
       <h1>Card Super Heroes</h1>
     </header>
     <main>
-      <section>
-        <div>
-          <div><i class="fas fa-heart"></i>icono posicion absoluta</div>
-          <div>
+      <section class="cards-container">
+        <div class="card">
+          <div class="img-bg bg-1">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="card-content">
             <img src="./img/batman.jpg" alt="" />
             <h2>BATMAN</h2>
             <p>
@@ -25,12 +27,12 @@
               aparece en Batman, Detective Comics, Batman y Robin, y Batman: The
               Dark Knight. Dick Grayson vuelve al manto de Nightwing
             </p>
-            <a href="">Ver mas</a>
+            <a href="" class="btn">Ver mas</a>
           </div>
         </div>
-        <div>
-          <div>icono posicion absoluta</div>
-          <div>
+        <div class="card">
+          <div class="img-bg bg-2"><i class="fas fa-heart"></i></div>
+          <div class="card-content">
             <img src="./img/wonderw.jpg" alt="" />
             <h2>MUJER MARAVILLA</h2>
             <p>
@@ -38,12 +40,12 @@
               revista de historietas All Star Comics (de diciembre de 1941)1​ y
               con su alter-ego en el Sensation Comics
             </p>
-            <a href="">Ver mas</a>
+            <a href="#" class="btn">Ver mas</a>
           </div>
         </div>
-        <div>
-          <div>icono posicion absoluta</div>
-          <div>
+        <div class="card">
+          <div class="img-bg bg-3"><i class="fas fa-heart"></i></div>
+          <div class="card-content">
             <img src="./img/superman.jpg" alt="" />
             <h2>SUPERMAN</h2>
             <p>
@@ -51,10 +53,10 @@
               avanzada que se parece a los humanos. Poco después de nacer, su
               planeta se destruye en un cataclismo natural
             </p>
-            <a href="">Ver mas</a>
+            <a href="#" class="btn">Ver mas</a>
           </div>
         </div>
-        <a href="#"><i class="fas fa-plus"></i>icono posiciion fija</a>
+        <a href="#" class="btn plus"><i class="fas fa-plus"></i></a>
       </section>
     </main>
     <footer>
