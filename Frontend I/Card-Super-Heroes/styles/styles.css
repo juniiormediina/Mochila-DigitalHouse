@@ -1,21 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+:root {
+  --fontFamily: "Roboto", sans-serif;
+  --mainColor: #00669f;
+  --secondaryColor: #1cd1b0;
+  --thirdColor: #ffffff;
+  --fourthColor: #cc2424;
+  --main-bg-color: #f3f3f3;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--fontFamily);
 }
 
 #desc {
-  background: #1cd1b0;
+  background: var(--secondaryColor);
   padding-left: 20px;
   position: relative;
 }
 
 header {
-  background: #00669f;
-  color: #fff;
+  background: var(--mainColor);
+  color: var(--thirdColor);
   padding: 20px;
   position: sticky;
   z-index: 10;
@@ -49,7 +58,7 @@ header h1 {
 }
 
 .img-bg i {
-  color: #cc2424;
+  color: var(--fourthColor);
   left: 15px;
   top: 15px;
   position: absolute;
@@ -76,7 +85,7 @@ header h1 {
   align-items: center;
   position: relative;
   padding: 40px 10px 0px 10px;
-  background: #f3f3f3;
+  background: var(--main-bg-color);
 }
 
 .card-content img {
@@ -96,23 +105,30 @@ header h1 {
 
 .btn {
   padding: 10px;
-  color: #fff;
-  background: #00669f;
+  color: var(--thirdColor);
+  background: var(--mainColor);
   border-radius: 7px;
 }
 
 .plus {
+  display: none;
   position: absolute;
   border-radius: 50%;
   padding: 20px;
-  left: 1470px;
+  left: 1180px;
 }
 
 /* footer */
 footer {
-  background: #00669f;
+  background: var(--mainColor);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   padding: 20px;
-  color: #fff;
+  color: var(--thirdColor);
+}
+
+@media screen and (min-width: 1280px) {
+  .plus {
+    display: unset;
+  }
 }
