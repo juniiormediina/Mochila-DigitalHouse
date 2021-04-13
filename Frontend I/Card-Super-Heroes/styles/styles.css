@@ -10,12 +10,17 @@
 #desc {
   background: #1cd1b0;
   padding-left: 20px;
+  position: relative;
 }
 
 header {
   background: #00669f;
   color: #fff;
   padding: 20px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  position: sticky;
 }
 
 header h1 {
@@ -80,6 +85,13 @@ header h1 {
   width: 112px;
   height: 112px;
   top: -52px;
+  background-repeat: no-repeat;
+  background-size: 289.4%;
+  background-position-x: 57%;
+}
+
+.prueba {
+  background-image: url("../img/batman.jpg");
 }
 
 .btn {

@@ -1,17 +1,36 @@
-function agregarHttp(url) {
+/* function agregarHttp(url) {
   return (newUrl = "http://" + url);
 }
 
 function procesar(array, callback) {
-  let result = newarr.push();
+  let result = [];
   for (let i = 0; i <= array.length; i++) {
-    let newarr = callback(array[i]);
-
-    return newarr;
+    result.push(callback(array[i]));
   }
-  console.log(result);
   return result;
 }
 
 let urlCompletas = procesar(["www.google.com", "www.yahoo.com"], agregarHttp);
-console.log(urlCompletas);
+console.log(urlCompletas); */
+
+function tengoClases(dia) {
+  switch (dia) {
+    case "lunes":
+      console.log("tenés clases");
+      break;
+    case "miercoles":
+      console.log("tenés clases");
+      break;
+    case "viernes":
+      console.log("tenés clases");
+      break;
+    default:
+      console.log("no tenés clases");
+      break;
+  }
+}
+
+tengoClases("lunes");
+tengoClases("miercoles");
+tengoClases("viernes");
+tengoClases("jueves");

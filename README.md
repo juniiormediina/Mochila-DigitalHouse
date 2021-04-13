@@ -8,6 +8,7 @@ Todos los pequeños proyectos de la materia Frontend I.
 
 1. [CV-Batman](https://juniiormediina.github.io/Mochila-DigitalHouse/Frontend%20I/CV-Batman/)
 2. [Receta](https://juniiormediina.github.io/Mochila-DigitalHouse/Frontend%20I/Receta)
+3. [Card-heroe](https://juniiormediina.github.io/Mochila-DigitalHouse/Frontend%20I/Card-Super-Heroes)
 
 Materiales de lectura de la materia Frontend I.
 
