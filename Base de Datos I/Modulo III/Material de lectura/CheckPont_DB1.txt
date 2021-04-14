@@ -1,0 +1,78 @@
+Plantilla DER.html diagrams.net(File/Import from/Device...):
+/*no olviadar File/Rename...*/
+https://drive.google.com/file/d/1s9tOD5RHGVmStIvrcHiVHQ9lIrSuRIgC/view?usp=sharing
+===================================================================================
+Comandos SQL:
+
+Crear Base de Datos:
+
+CREATE DATABASE 'nombre_base_datos';
+USE 'nombre_base_datos';
+===================================================================================
+Crear Tabla:
+
+CREATE TABLE nombre_tabla(
+    nombre_col_1 TIPO_DATO CONSTRAINT,
+    nombre_col_2 TIPO_DATO CONSTRAINT,
+    nombre_col_3 TIPO_DATO CONSTRAINT,
+    PRIMARY KEY (id),
+    CONSTRAINT (nombre_fantasia)
+        FOREIGN KEY (atributo_esta_tabla) REFERENCES 'nombre_base_datos'.'tabla_referida'(atributo_referido);
+);
+===================================================================================
+Alter Table:
+
+ALTER TABLE 'nombre_tabla'
+ADD nombre_col TIPO_DATO CONTRAINT;
+
+ALTER TABLE 'nombre_tabla'
+MODIFY nombre_col TIPO_DATO CONTRAINT;
+
+ALTER TABLE 'nombre_tabla'
+DROP nombre_col;
+===================================================================================
+Insert:
+
+-Insertando datos en todas las columnas:
+INSERT INTO 'nombre_tabla' VALUES 
+(valor_1, valor_2, valor_3,....);
+
+-Insertadndo datos en las columnas especificadas:
+INSERT INTO 'nombre_tabla' (col_1, col_2, col_3, ...) VALUES
+(valor_1, valor_2, valor_3,....);
+===================================================================================
+Update:
+
+UPDATE 'nombre_tabla'
+SET col_1 = valor_1, col_2 = valor_", col_3 = valor_3, ....
+WHERE condicion;
+===================================================================================
+Delete:
+
+DELETE FROM 'nombre_tabla'
+WHERE Condicion;
+===================================================================================
+Select:
+
+SELECT (col_1, col_2, col_3, ...) FROM 'nombre_tabla';
+
+SELECT * FROM 'nombre_tabla'
+WHERE condicion_1
+AND condicion_2
+OR condicion_3
+
+SELECT * FROM 'nombre_tabla'
+WHERE condicion_1
+ORDER BY condicion_2, criterio_desempate
+/*DESC(descendiente)*/ 
+
+Between:
+SELECT * FROM 'nombre_tabla'
+WHERE nombre_col BETWEEN x AND y
+
+Like:
+SELECT * FROM 'nombre_tabla'
+WHERE nombre_col LIKE "string" 
+/*Comodin% sustitudo de cero, uno o varios caracteres*/
+/*Comodin_ sustitudo de uno solo caracter*/
+===================================================================================

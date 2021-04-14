@@ -99,10 +99,6 @@ header h1 {
   background-position-x: 57%;
 }
 
-.prueba {
-  background-image: url("../img/batman.jpg");
-}
-
 .btn {
   padding: 10px;
   color: var(--thirdColor);
