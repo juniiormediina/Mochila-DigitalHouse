@@ -1,7 +1,7 @@
 //función que recibe un numero y retorna si es par o impar
 
 function esPar(n) {
-    return (n % 2) === 0;
+  return n % 2 === 0;
 }
 
 console.log(esPar(6));
@@ -9,15 +9,14 @@ console.log(esPar(6));
 //manera más díficil
 
 function esPar(num) {
-    if (num % 2 === 0) {
-        return true;
-    } else {
-        return false;
-    }
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-
-console.log(esPar(45));// false
+console.log(esPar(45)); // false
 console.log(esPar(2)); //true
 console.log(esPar(12)); //true
 console.log(esPar(3)); //false
@@ -25,7 +24,7 @@ console.log(esPar(3)); //false
 console.log("_______________________________");
 
 function puedeEntrar(edad) {
-    return edad >= 18;
+  return edad >= 18;
 }
 
 console.log(puedeEntrar(45));
@@ -60,31 +59,28 @@ Si el vehículo es “coche”, el precio kilómetro ha de ser 0.10,
     }
 } */
 
-
 //un función que recibe cant de lados y devuelve que figura geo le pertenece
 
-figGeo(3)// triángulo
-figGeo(4)// cuadrilatero
+figGeo(3); // triángulo
+figGeo(4); // cuadrilatero
 
 function figGeo(cantidad_lados) {
-    switch (cantidad_lados) {
-        case 3:
-            console.log("triangulo")
-            break;
-            case 4:
-                console.log("cuadrilatero")
-                break;
-            default:
-                console.log("otra figura");
-            break;
-    }
-        
-     }
+  switch (cantidad_lados) {
+    case 3:
+      console.log("triangulo");
+      break;
+    case 4:
+      console.log("cuadrilatero");
+      break;
+    default:
+      console.log("otra figura");
+      break;
+  }
+}
 
+figura(4);
 
-     figura (4)
-
-     /* una función que recibe ingredientes de un sandwich y determina su valor final
+/* una función que recibe ingredientes de un sandwich y determina su valor final
 base: $150, con tomate $20+, con papas $50+, con huevo $60+
 ej function precio(tomate, papa, huevo){}
 precio(true, false, true) 150 + 20 + 60
@@ -93,13 +89,18 @@ precio(true, false, true) 150 + 20 + 60
 //su código aquí
 
 function precio(tomate, papa, huevo) {
-    let precio = 150
-    if (tomate) {precio += 20};
-    if (papa) {precio += 50};
-    if (huevo) {precio += 60};
+  let precio = 150;
+  if (tomate) {
+    precio += 20;
+  }
+  if (papa) {
+    precio += 50;
+  }
+  if (huevo) {
+    precio += 60;
+  }
 
-        return precio
-    
+  return precio;
 }
 
 console.log(precio(true, true, true)); //150+20+50+60= 280
@@ -110,18 +111,15 @@ console.log(precio(true, true, false)); //150+20+50=220
 console.log(precio(true, false, false)); //150+20=170
 console.log(precio(true, false, true)); //150+20+60=230
 
-
 //con ternario
 
 function precio(tomate, papas, huevo) {
-    let base = 150
-    base += tomate ? 20 : 0
-    base += papas ? 50 : 0
-    base += huevo ? 60 : 0
+  let base = 150;
+  base += tomate ? 20 : 0;
+  base += papas ? 50 : 0;
+  base += huevo ? 60 : 0;
 
-    return base;
-
-
+  return base;
 }
 
 console.log(precio(true, true, true)); //150+20+50+60= 280

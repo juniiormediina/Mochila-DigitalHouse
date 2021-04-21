@@ -9,7 +9,6 @@ function finDeSemana (dia) {
 	} */
 // empieza aca
 
-
 /*   let dia = "lunes"
 switch (dia) {
     case "viernes":
@@ -27,22 +26,21 @@ case "lunes":
 }
 	 */
 
-let dia = "miercoles"
+let dia = "miercoles";
 function tengoClases(dia) {
-	switch (dia) {
-        case "miercoles":
-        case "lunes":
-        case "viernes":
-            console.log("tenés clases");        
-            
-            break;
-    
-        default:
-            console.log("no tenés clases");
-            break;
-    }
+  switch (dia) {
+    case "miercoles":
+    case "lunes":
+    case "viernes":
+      console.log("tenés clases");
 
+      break;
+
+    default:
+      console.log("no tenés clases");
+      break;
+  }
 }
 
-tengoClases (dia)
-tengoClases ("jueves")
+tengoClases(dia);
+tengoClases("jueves");
