@@ -16,46 +16,49 @@ realizada y el nuevo saldo.
 4. Crear una función constructora a partir de nuestro objeto cuenta.
 5. Instanciar los objetos con diferentes valores iniciales y probar los métodos.*/
 
-
-
-
-
 let cuenta = {
-    numeroCuenta : 1234,
-    saldo : 0,
-    titular : "Juana",
-    deposito : function(cantidadDinero){
-        this.saldo = this.saldo + cantidadDinero
-        console.log('Deposito realizado con exito, su saldo actual es de: '+ this.saldo);
-    },
-    extraccion: function (cantidadDinero) {
-        if ( cantidadDinero > this.saldo) {
-            console.log('Fondos insuficientes');
-        }else{
-            this.saldo = this.saldo - cantidadDinero;
-            console.log('Extraccion realizada con exito, su saldo actual es '+ this.saldo);
-    
-        }
+  numeroCuenta: 1234,
+  saldo: 0,
+  titular: "Juana",
+  deposito: function (cantidadDinero) {
+    this.saldo = this.saldo + cantidadDinero;
+    console.log(
+      "Deposito realizado con exito, su saldo actual es de: " + this.saldo
+    );
+  },
+  extraccion: function (cantidadDinero) {
+    if (cantidadDinero > this.saldo) {
+      console.log("Fondos insuficientes");
+    } else {
+      this.saldo = this.saldo - cantidadDinero;
+      console.log(
+        "Extraccion realizada con exito, su saldo actual es " + this.saldo
+      );
     }
- }
-
+  },
+};
 
 cuenta.deposito(10000);
 cuenta.deposito(5000);
 
 function Cuenta(numeroDeCuenta, saldo, titular) {
-    this.numeroDeCuenta = numeroDeCuenta;
-    this.saldo = saldo;
-    this.titular = titular;
-    this.deposito = function(cantidadDinero){
-        this.saldo = this.saldo + cantidadDinero
-        console.log('Deposito realizado con exito, su saldo actual es de: '+ this.saldo);
-    },
-    this.extraccion = function (cantidadDinero) {
-        if ( cantidadDinero > this.saldo) {
-            console.log('Fondos insuficientes');
-        }else{
-            this.saldo = this.saldo - cantidadDinero;
-            console.log('Extraccion realizada con exito, su saldo actual es '+ this.saldo);
-    
+  this.numeroDeCuenta = numeroDeCuenta;
+  this.saldo = saldo;
+  this.titular = titular;
+  (this.deposito = function (cantidadDinero) {
+    this.saldo = this.saldo + cantidadDinero;
+    console.log(
+      "Deposito realizado con exito, su saldo actual es de: " + this.saldo
+    );
+  }),
+    (this.extraccion = function (cantidadDinero) {
+      if (cantidadDinero > this.saldo) {
+        console.log("Fondos insuficientes");
+      } else {
+        this.saldo = this.saldo - cantidadDinero;
+        console.log(
+          "Extraccion realizada con exito, su saldo actual es " + this.saldo
+        );
+      }
+    });
 }
