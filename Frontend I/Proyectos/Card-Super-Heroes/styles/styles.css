@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('./login.css');
 
 :root {
-  --fontFamily: "Roboto", sans-serif;
+  --fontFamily: 'Roboto', sans-serif;
   --mainColor: #00669f;
   --secondaryColor: #1cd1b0;
   --thirdColor: #ffffff;
@@ -14,6 +16,11 @@
   padding: 0;
   margin: 0;
   font-family: var(--fontFamily);
+}
+
+a {
+  text-transform: none;
+  text-decoration: none;
 }
 
 #desc {
@@ -66,15 +73,15 @@ header h1 {
 }
 
 .bg-1 {
-  background-image: url("../img/bg-batman.jpg");
+  background-image: url('../img/bg-batman.jpg');
 }
 
 .bg-2 {
-  background-image: url("../img/bg-wonderw.jpg");
+  background-image: url('../img/bg-wonderw.jpg');
 }
 
 .bg-3 {
-  background-image: url("../img/bg-superman.jpg");
+  background-image: url('../img/bg-superman.jpg');
 }
 
 .card-content {
